@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlin ClearOut - Profi Entrümpelung & Haushaltsauflösung in Berlin</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Berlin ClearOut - Profi Entrümpelung & Haushaltsauflösung in Berlin">
+    <meta name="description" content="Professionelle Entrümpelung, Wohnungsauflösung und Haushaltsauflösung in Berlin zum Festpreis. 24h Express-Service, diskret & zuverlässig. Jetzt kostenloses Angebot anfordern!">
+    <meta name="keywords" content="Entrümpelung Berlin, Wohnungsauflösung Berlin, Haushaltsauflösung Berlin, Kellerentrümpelung Berlin, Messie Wohnung räumen Berlin, Entrümpelungsfirma Berlin">
+    <meta name="author" content="Berlin ClearOut">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://berlin-clearout.de/">
+    <meta property="og:title" content="Berlin ClearOut - Profi Entrümpelung & Haushaltsauflösung in Berlin">
+    <meta property="og:description" content="Schnell, diskret und zum Festpreis. Wir räumen Wohnungen, Keller und Gewerbe in ganz Berlin.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1595844730298-b960ff98fee0?q=80&w=1200">
+
+    <link rel="canonical" href="https://berlin-clearout.de/" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+          font-family: 'Inter', sans-serif; 
+          background-color: #ffffff;
+          -webkit-font-smoothing: antialiased;
+          color: #0f172a;
+          overflow-x: hidden;
+        }
+
+        /* Optimized Reveal Core */
+        .reveal {
+          opacity: 0;
+          transform: translateY(15px);
+          transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), 
+                      transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          will-change: transform, opacity;
+          backface-visibility: hidden;
+        }
+
+        .reveal-left {
+          opacity: 0;
+          transform: translateX(-15px);
+          transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), 
+                      transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          will-change: transform, opacity;
+        }
+
+        .reveal-right {
+          opacity: 0;
+          transform: translateX(15px);
+          transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), 
+                      transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          will-change: transform, opacity;
+        }
+
+        /* Activation state */
+        .reveal.active, 
+        .reveal-left.active, 
+        .reveal-right.active {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+
+        /* Stagger Classes */
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+        .delay-500 { transition-delay: 500ms; }
+
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #fafafa; }
+        ::-webkit-scrollbar-thumb { background: #e4e4e7; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ea580c; }
+
+        :focus-visible {
+          outline: 2px solid #ea580c;
+          outline-offset: 4px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-white">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

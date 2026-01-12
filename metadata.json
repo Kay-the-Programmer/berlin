@@ -1,0 +1,7 @@
+{
+  "name": "Berlin ClearOut",
+  "description": "Professional household liquidation and apartment clearance service landing page in Berlin.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
