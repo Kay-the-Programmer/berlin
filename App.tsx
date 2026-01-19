@@ -1,16 +1,16 @@
 
 import React from 'react';
-import { LanguageProvider } from './context/LanguageContext';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import WhyChooseUs from './components/WhyChooseUs';
-import Services from './components/Services';
-import BeforeAfter from './components/BeforeAfter';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
-import AboutUs from './components/AboutUs';
-import ContactSection from './components/ContactSection';
-import Footer from './components/Footer';
+import { LanguageProvider } from './src/context/LanguageContext';
+import Navbar from './src/components/Navbar';
+import Hero from './src/components/Hero';
+import WhyChooseUs from './src/components/WhyChooseUs';
+import Services from './src/components/Services';
+import BeforeAfter from './src/components/BeforeAfter';
+import Testimonials from './src/components/Testimonials';
+import FAQ from './src/components/FAQ';
+import AboutUs from './src/components/AboutUs';
+import ContactSection from './src/components/ContactSection';
+import Footer from './src/components/Footer';
 
 const AppContent: React.FC = () => {
   return (
