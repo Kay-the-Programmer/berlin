@@ -15,7 +15,7 @@ import sameDayImg from '../images/services/same_day.png';
 
 const Services: React.FC = () => {
   const { t } = useLanguage();
-  const servicesList = t('services.list') as any[];
+  const servicesList = (Array.isArray(t('services.list')) ? t('services.list') : []) as any[];
   const sectionRef = useScrollReveal();
 
   const images = [

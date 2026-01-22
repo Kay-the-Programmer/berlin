@@ -8,7 +8,7 @@ const FAQ: React.FC = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
   const { t } = useLanguage();
   const sectionRef = useScrollReveal();
-  const items = t('faq.items') as { question: string, answer: string }[];
+  const items = (Array.isArray(t('faq.items')) ? t('faq.items') : []) as { question: string, answer: string }[];
 
   return (
     <section ref={sectionRef} className="py-24 md:py-32 bg-[#FDFCFB] reveal overflow-hidden" aria-labelledby="faq-title">
@@ -22,13 +22,12 @@ const FAQ: React.FC = () => {
 
         <div className="space-y-4 md:space-y-6 text-left">
           {items.map((faq, idx) => (
-            <div 
-              key={idx} 
-              className={`group border border-gray-100 rounded-2xl md:rounded-3xl overflow-hidden transition-all duration-300 reveal-child delay-${idx * 50 + 200} ${
-                openIdx === idx ? 'ring-1 ring-orange-500 bg-white shadow-xl shadow-orange-100/20' : 'bg-white hover:border-orange-200'
-              }`}
+            <div
+              key={idx}
+              className={`group border border-gray-100 rounded-2xl md:rounded-3xl overflow-hidden transition-all duration-300 reveal-child delay-${idx * 50 + 200} ${openIdx === idx ? 'ring-1 ring-orange-500 bg-white shadow-xl shadow-orange-100/20' : 'bg-white hover:border-orange-200'
+                }`}
             >
-              <button 
+              <button
                 id={`faq-btn-${idx}`}
                 aria-expanded={openIdx === idx}
                 aria-controls={`faq-content-${idx}`}
@@ -38,20 +37,18 @@ const FAQ: React.FC = () => {
                 <span className={`text-lg md:text-xl font-bold transition-colors ${openIdx === idx ? 'text-orange-600' : 'text-gray-900'}`}>
                   {faq.question}
                 </span>
-                <div className={`flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-xl flex items-center justify-center transition-all duration-500 ${
-                  openIdx === idx ? 'bg-orange-600 text-white rotate-180' : 'bg-gray-50 text-gray-400 group-hover:bg-orange-100 group-hover:text-orange-600'
-                }`}>
+                <div className={`flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-xl flex items-center justify-center transition-all duration-500 ${openIdx === idx ? 'bg-orange-600 text-white rotate-180' : 'bg-gray-50 text-gray-400 group-hover:bg-orange-100 group-hover:text-orange-600'
+                  }`}>
                   {openIdx === idx ? <Minus className="w-4 h-4 md:w-5 md:h-5" /> : <Plus className="w-4 h-4 md:w-5 md:h-5" />}
                 </div>
               </button>
-              
-              <div 
+
+              <div
                 id={`faq-content-${idx}`}
                 role="region"
                 aria-labelledby={`faq-btn-${idx}`}
-                className={`grid transition-all duration-500 ease-in-out ${
-                  openIdx === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
-                }`}
+                className={`grid transition-all duration-500 ease-in-out ${openIdx === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                  }`}
               >
                 <div className="overflow-hidden">
                   <div className="p-6 md:p-8 pt-0 text-base md:text-lg text-gray-600 leading-relaxed font-medium">

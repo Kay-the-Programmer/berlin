@@ -6,7 +6,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const WhyChooseUs: React.FC = () => {
   const { t } = useLanguage();
-  const items = t('whyChooseUs.items') as any[];
+  const items = (Array.isArray(t('whyChooseUs.items')) ? t('whyChooseUs.items') : []) as any[];
   const sectionRef = useScrollReveal();
 
   const icons = [
@@ -32,8 +32,8 @@ const WhyChooseUs: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-zinc-200 border border-zinc-200 overflow-hidden rounded-2xl">
           {items.map((item, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className={`bg-white p-8 md:p-10 hover:bg-zinc-50 transition-all duration-300 group reveal reveal-stagger delay-${idx * 100}`}
             >
               <div className="w-10 h-10 rounded-lg bg-zinc-100 flex items-center justify-center mb-6 md:mb-8 text-slate-500 group-hover:text-orange-600 transition-colors">

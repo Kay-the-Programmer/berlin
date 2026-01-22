@@ -67,7 +67,7 @@ const AboutUs: React.FC = () => {
           <div className="bg-white p-10 rounded-2xl border border-zinc-100 relative reveal-unit reveal-right delay-200 shadow-sm">
             <h3 className="text-xl font-bold text-slate-900 mb-8 tracking-tight">{t('about.listTitle')}</h3>
             <ul className="space-y-4 mb-10">
-              {(t('about.services') as string[]).map((item, i) => (
+              {(Array.isArray(t('about.services')) ? t('about.services') : []).map((item: string, i: number) => (
                 <li key={i} className="flex items-center text-slate-700 text-sm font-semibold">
                   <div className="w-6 h-6 bg-zinc-50 border border-zinc-100 rounded-lg flex items-center justify-center mr-4">
                     <span className="text-[10px] text-orange-600 font-bold">{i + 1}</span>
@@ -90,7 +90,7 @@ const AboutUs: React.FC = () => {
 
         <div className="border-t border-zinc-200 pt-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            {(t('about.features') as string[]).map((feature, i) => (
+            {(Array.isArray(t('about.features')) ? t('about.features') : []).map((feature: string, i: number) => (
               <div key={i} className={`text-center flex flex-col items-center reveal-unit reveal delay-${i * 100 + 300}`}>
                 <div className="w-10 h-10 bg-white border border-zinc-100 rounded-lg flex items-center justify-center mb-6">
                   <CheckCircle2 className="w-5 h-5 text-orange-600" />

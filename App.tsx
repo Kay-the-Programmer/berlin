@@ -31,10 +31,14 @@ const AppContent: React.FC = () => {
   );
 };
 
+import ErrorBoundary from './src/components/ErrorBoundary';
+
 const App: React.FC = () => {
   return (
     <LanguageProvider>
-      <AppContent />
+      <ErrorBoundary>
+        <AppContent />
+      </ErrorBoundary>
     </LanguageProvider>
   );
 };

@@ -7,7 +7,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 const BeforeAfter: React.FC = () => {
   const { t } = useLanguage();
   const sectionRef = useScrollReveal();
-  const projects = t('beforeAfter.projects') as any[];
+  const projects = (Array.isArray(t('beforeAfter.projects')) ? t('beforeAfter.projects') : []) as any[];
 
   return (
     <section ref={sectionRef} id="references" className="py-24 bg-white scroll-mt-20 reveal">
@@ -24,7 +24,7 @@ const BeforeAfter: React.FC = () => {
         <div className="space-y-32">
           {projects.map((project, idx) => (
             <div key={idx} className={`reveal reveal-child delay-${(idx + 1) * 100}`}>
-              <BeforeAfterSlider 
+              <BeforeAfterSlider
                 {...project}
               />
             </div>
@@ -32,7 +32,7 @@ const BeforeAfter: React.FC = () => {
         </div>
 
         <div className="mt-20 reveal reveal-child delay-500">
-          <a 
+          <a
             href="#contact"
             className="inline-block bg-orange-600 text-white px-10 py-4 rounded-xl font-bold text-sm uppercase tracking-widest hover:bg-orange-700 transition-all shadow-xl shadow-orange-100"
           >
