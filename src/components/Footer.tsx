@@ -2,6 +2,7 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import logo from '../images/footer_logo.png';
 
 const Footer: React.FC = () => {
   const { t, language } = useLanguage();
@@ -11,7 +12,11 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 md:gap-20 mb-16 md:mb-24">
           <div className="space-y-6">
-            <span className="text-xl font-bold tracking-tight">Berlin<span className="text-orange-600">ClearOut</span></span>
+            <img
+              src={logo}
+              alt="BerlinClearOut"
+              className="h-10 w-auto object-contain"
+            />
             <p className="text-zinc-500 text-sm leading-relaxed max-w-xs">
               Professional clearing out and household liquidation throughout Berlin since 2015. Reliable, fast, and fair.
             </p>
