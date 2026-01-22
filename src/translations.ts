@@ -24,7 +24,7 @@ export const translations = {
             description: "Professionelle Haushaltsauflösung und Wohnungsräumung. Kostenlose Besichtigung innerhalb von 24h.",
             benefits: ["Schnell vor Ort", "Festpreis-Garantie", "Diskrete Abwicklung", "Besichtigung kostenlos"],
             ctaPrimary: "Kostenloses Angebot",
-            ctaSecondary: "Anrufen: +49 176 79567083",
+            ctaSecondary: "Anrufen: +49 176 22006681",
             learnMore: "Mehr erfahren",
             stats: { projects: "Projekte", service: "Service", rating: "Bewertung" }
         },
@@ -161,7 +161,7 @@ export const translations = {
             direct_whatsapp: "WhatsApp",
             direct_office: "Büro",
             direct_whatsapp_text: "24/7 Erreichbar",
-            direct_office_text: "Berlin, Deutschland",
+            direct_office_text: "Brigitte-Reimann-Str. 27, 12629",
             form: {
                 postalCode: "Postleitzahl",
                 date: "Wunschtermin",
@@ -199,7 +199,7 @@ export const translations = {
             description: "Book your cleaner directly from a Cleaning Company in Berlin. Reliable.",
             benefits: ["Fast on-site", "Fixed Price Guarantee", "Discreet handling", "Free viewing"],
             ctaPrimary: "Request a cleaner",
-            ctaSecondary: "Call: +49 176 79567083",
+            ctaSecondary: "Call: +49 176 22006681",
             learnMore: "Learn more",
             stats: { projects: "Projects", service: "Service", rating: "Rating" }
         },
@@ -336,7 +336,7 @@ export const translations = {
             direct_whatsapp: "WhatsApp",
             direct_office: "Office",
             direct_whatsapp_text: "24/7 Available",
-            direct_office_text: "Berlin, Germany",
+            direct_office_text: "Brigitte-Reimann-Str. 27, 12629",
             form: {
                 postalCode: "Postal Code",
                 date: "Desired Date",

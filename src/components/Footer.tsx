@@ -40,8 +40,8 @@ const Footer: React.FC = () => {
 
           <div className="text-left md:text-right flex flex-col md:items-end">
             <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 mb-6 md:mb-8">Contact</h4>
-            <p className="text-lg font-bold mb-2">+49 176 79567083</p>
-            <p className="text-zinc-400 text-sm">info@ber-entruempelung.com</p>
+            <p className="text-lg font-bold mb-2">+49 176 22006681</p>
+            <p className="text-zinc-400 text-sm">actreinigung@gmail.com</p>
           </div>
         </div>
 

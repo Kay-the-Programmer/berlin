@@ -120,13 +120,13 @@ const ContactSection: React.FC = () => {
             <p className="text-zinc-500 mb-12 text-lg font-medium">{t('contact.subtitle')}</p>
 
             <div className="space-y-8">
-              <a href="tel:+4917679567083" className="flex items-center group">
+              <a href="tel:+4917622006681" className="flex items-center group">
                 <div className="w-12 h-12 bg-zinc-50 border border-zinc-100 rounded-xl flex items-center justify-center mr-5 group-hover:border-orange-200 transition-colors">
                   <Phone className="w-5 h-5 text-slate-400 group-hover:text-orange-600" />
                 </div>
                 <div>
                   <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest mb-1">{t('contact.direct_call')}</p>
-                  <p className="text-lg font-bold text-slate-900">+49 176 79567083</p>
+                  <p className="text-lg font-bold text-slate-900">+49 176 22006681</p>
                 </div>
               </a>
               <div className="flex items-center">

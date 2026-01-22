@@ -80,9 +80,9 @@ const AboutUs: React.FC = () => {
               <div className="w-10 h-10 bg-white border border-zinc-100 rounded-lg flex items-center justify-center mr-4">
                 <Phone className="w-5 h-5 text-orange-600" />
               </div>
-              <a href="tel:+4917679567083" className="block hover:opacity-80 transition-opacity" title={t('about.hotlineLabel')}>
+              <a href="tel:+4917622006681" className="block hover:opacity-80 transition-opacity" title={t('about.hotlineLabel')}>
                 <div className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest mb-1">{t('about.hotlineLabel')}</div>
-                <div className="text-lg font-bold text-slate-900">+49 176 79567083</div>
+                <div className="text-lg font-bold text-slate-900">+49 176 22006681</div>
               </a>
             </div>
           </div>

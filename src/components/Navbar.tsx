@@ -29,8 +29,8 @@ const Navbar: React.FC = () => {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMenuOpen
-            ? 'bg-white/80 backdrop-blur-xl border-b border-zinc-100 py-3'
-            : 'bg-transparent py-5'
+          ? 'bg-white/80 backdrop-blur-xl border-b border-zinc-100 py-3'
+          : 'bg-transparent py-5'
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -72,11 +72,11 @@ const Navbar: React.FC = () => {
               </div>
 
               <a
-                href="tel:+4917679567083"
+                href="tel:+4917622006681"
                 className="text-slate-900 font-bold text-xs flex items-center hover:text-orange-600 transition-colors"
               >
                 <Phone className="w-3 h-3 mr-2 text-orange-600" />
-                <span>+49 176 79567083</span>
+                <span>+49 176 22006681</span>
               </a>
 
               <a

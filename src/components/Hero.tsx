@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="tel:+4917679567083"
+              href="tel:+4917622006681"
               className="bg-white border border-zinc-200 text-slate-900 px-8 md:px-10 py-3.5 md:py-4 rounded-xl font-bold text-xs md:text-sm uppercase tracking-widest hover:border-orange-200 hover:text-orange-600 transition-all flex items-center justify-center"
             >
               <span>{t('hero.ctaSecondary').split(':')[1]}</span>
