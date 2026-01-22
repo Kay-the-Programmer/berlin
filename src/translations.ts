@@ -1,5 +1,9 @@
 import beforeImg from './images/before.png';
 import afterImg from './images/after.png';
+import clearingBefore from './images/clearing_before.png';
+import clearingAfter from './images/clearing_after.png';
+import liquidationBefore from './images/liquidation_before.png';
+import liquidationAfter from './images/liquidation_after.png';
 
 export const translations = {
     de: {
@@ -66,15 +70,15 @@ export const translations = {
                     days: 1
                 },
                 {
-                    before: beforeImg,
-                    after: afterImg,
+                    before: liquidationBefore,
+                    after: liquidationAfter,
                     label: "Komplette Haushaltsauflösung",
                     location: "Berlin-Charlottenburg",
                     days: 1
                 },
                 {
-                    before: beforeImg,
-                    after: afterImg,
+                    before: clearingBefore,
+                    after: clearingAfter,
                     label: "Komplettentrümpelung",
                     location: "Berlin-Pankow",
                     days: 1
@@ -241,15 +245,15 @@ export const translations = {
                     days: 1
                 },
                 {
-                    before: beforeImg,
-                    after: afterImg,
+                    before: liquidationBefore,
+                    after: liquidationAfter,
                     label: "Complete Household Liquidation",
                     location: "Berlin-Charlottenburg",
                     days: 1
                 },
                 {
-                    before: beforeImg,
-                    after: afterImg,
+                    before: clearingBefore,
+                    after: clearingAfter,
                     label: "Full Decluttering",
                     location: "Berlin-Pankow",
                     days: 1
