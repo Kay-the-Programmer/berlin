@@ -1,3 +1,5 @@
+import beforeImg from './images/before.png';
+import afterImg from './images/after.png';
 
 export const translations = {
     de: {
@@ -57,22 +59,22 @@ export const translations = {
             labels: { before: "Vorher", after: "Nachher" },
             projects: [
                 {
-                    before: "/src/images/before.png",
-                    after: "/src/images/after.png",
+                    before: beforeImg,
+                    after: afterImg,
                     label: "Kellerentrümpelung",
                     location: "Berlin-Mitte",
                     days: 1
                 },
                 {
-                    before: "/src/images/before.png",
-                    after: "/src/images/after.png",
+                    before: beforeImg,
+                    after: afterImg,
                     label: "Komplette Haushaltsauflösung",
                     location: "Berlin-Charlottenburg",
                     days: 1
                 },
                 {
-                    before: "/src/images/before.png",
-                    after: "/src/images/after.png",
+                    before: beforeImg,
+                    after: afterImg,
                     label: "Komplettentrümpelung",
                     location: "Berlin-Pankow",
                     days: 1
@@ -230,22 +232,22 @@ export const translations = {
                 labels: { before: "Before", after: "After" },
                 projects: [
                     {
-                        before: "/src/images/before.png",
-                        after: "/src/images/after.png",
+                        before: beforeImg,
+                        after: afterImg,
                         label: "Basement Clearing",
                         location: "Berlin-Mitte",
                         days: 1
                     },
                     {
-                        before: "/src/images/before.png",
-                        after: "/src/images/after.png",
+                        before: beforeImg,
+                        after: afterImg,
                         label: "Complete Household Liquidation",
                         location: "Berlin-Charlottenburg",
                         days: 1
                     },
                     {
-                        before: "/src/images/before.png",
-                        after: "/src/images/after.png",
+                        before: beforeImg,
+                        after: afterImg,
                         label: "Full Decluttering",
                         location: "Berlin-Pankow",
                         days: 1
