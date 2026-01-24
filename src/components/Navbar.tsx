@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
             <a href="#home" className="flex items-center group focus:outline-none">
               <img
                 src={logo}
-                alt="BerlinClearOut"
+                alt="Act Umzugs & Reinigungs"
                 className="h-10 w-auto object-contain"
               />
             </a>

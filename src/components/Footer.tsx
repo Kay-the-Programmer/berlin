@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <img
               src={logo}
-              alt="BerlinClearOut"
+              alt="Act Umzugs & Reinigungs"
               className="h-10 w-auto object-contain"
             />
             <p className="text-zinc-500 text-sm leading-relaxed max-w-xs">
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-zinc-600 space-y-6 md:space-y-0 text-center md:text-left">
-          <p>© 2025 Berlin ClearOut.</p>
+          <p>© 2025 Act Umzugs & Reinigungs.</p>
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             <a href="#" className="hover:text-white transition-colors">Imprint</a>
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
