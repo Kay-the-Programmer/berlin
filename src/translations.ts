@@ -30,7 +30,7 @@ export const translations = {
         },
         whyChooseUs: {
             title: "Warum",
-            subtitle: "Berlin ClearOut",
+            subtitle: "Act Umzugs & Reinigungs",
             description: "Über 500 zufriedene Kunden vertrauen auf unsere professionelle Entrümpelung in Berlin",
             items: [
                 { title: "Schnell vor Ort", desc: "Besichtigungstermine in ganz Berlin innerhalb von 24 Stunden." },
@@ -88,7 +88,7 @@ export const translations = {
         testimonials: {
             title: "Das sagen unsere",
             subtitle: "Kunden",
-            description: "Über 500 zufriedene Kunden vertrauen auf Berlin ClearOut",
+            description: "Über 500 zufriedene Kunden vertrauen auf Act Umzugs & Reinigungs",
             ratingText: "5 von 5 Sternen",
             googleText: "Google Bewertungen",
             viewAll: "Alle Bewertungen ansehen",
@@ -113,7 +113,7 @@ export const translations = {
         about: {
             title1: "Entrümpelung Berlin",
             title2: "– Ihr lokaler Experte für Berlin & Umland",
-            p1_1: "Berlin ClearOut",
+            p1_1: "Act Umzugs & Reinigungs",
             p1_2: " ist Ihr zuverlässiger Partner für ",
             p1_3: " Entrümpelung Berlin",
             p1_4: ", ",
@@ -205,7 +205,7 @@ export const translations = {
         },
         whyChooseUs: {
             title: "Why",
-            subtitle: "Berlin ClearOut",
+            subtitle: "Act Umzugs & Reinigungs",
             description: "Over 500 satisfied customers trust our professional decluttering in Berlin",
             items: [
                 { title: "Fast on-site", desc: "Viewing appointments throughout Berlin within 24 hours." },
@@ -263,7 +263,7 @@ export const translations = {
         testimonials: {
             title: "What our",
             subtitle: "Customers say",
-            description: "Over 500 satisfied customers trust Berlin ClearOut",
+            description: "Over 500 satisfied customers trust Act Umzugs & Reinigungs",
             ratingText: "5 out of 5 stars",
             googleText: "Google Reviews",
             viewAll: "View all reviews",
@@ -288,7 +288,7 @@ export const translations = {
         about: {
             title1: "Decluttering Berlin",
             title2: "– Your local expert for Berlin & surroundings",
-            p1_1: "Berlin ClearOut",
+            p1_1: "Act Umzugs & Reinigungs",
             p1_2: " is your reliable partner for ",
             p1_3: " decluttering Berlin",
             p1_4: ", ",
