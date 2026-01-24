@@ -1,25 +1,12 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Phone, CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const AboutUs: React.FC = () => {
   const { t } = useLanguage();
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          entry.target.querySelectorAll('.reveal-unit').forEach(el => el.classList.add('active'));
-        }
-      });
-    }, { threshold: 0.1 });
-
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
-  }, []);
+  const sectionRef = useScrollReveal();
 
   return (
     <section ref={sectionRef} id="about" className="py-24 bg-zinc-50 scroll-mt-20 reveal">
@@ -31,7 +18,7 @@ const AboutUs: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
-          <div className="space-y-6 text-zinc-500 leading-relaxed font-medium reveal-unit reveal-left delay-100">
+          <div className="space-y-6 text-zinc-500 leading-relaxed font-medium reveal-unit reveal-left" style={{ transitionDelay: '100ms' }}>
             <p>
               <span className="font-bold text-slate-900">{t('about.p1_1')}</span>
               {t('about.p1_2')}
@@ -64,7 +51,7 @@ const AboutUs: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-white p-10 rounded-2xl border border-zinc-100 relative reveal-unit reveal-right delay-200 shadow-sm">
+          <div className="bg-white p-10 rounded-2xl border border-zinc-100 relative reveal-unit reveal-right shadow-sm" style={{ transitionDelay: '200ms' }}>
             <h3 className="text-xl font-bold text-slate-900 mb-8 tracking-tight">{t('about.listTitle')}</h3>
             <ul className="space-y-4 mb-10">
               {(Array.isArray(t('about.services')) ? t('about.services') : []).map((item: string, i: number) => (
@@ -91,7 +78,7 @@ const AboutUs: React.FC = () => {
         <div className="border-t border-zinc-200 pt-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {(Array.isArray(t('about.features')) ? t('about.features') : []).map((feature: string, i: number) => (
-              <div key={i} className={`text-center flex flex-col items-center reveal-unit reveal delay-${i * 100 + 300}`}>
+              <div key={i} className="text-center flex flex-col items-center reveal-unit reveal" style={{ transitionDelay: `${i * 100 + 300}ms` }}>
                 <div className="w-10 h-10 bg-white border border-zinc-100 rounded-lg flex items-center justify-center mb-6">
                   <CheckCircle2 className="w-5 h-5 text-primary-600" />
                 </div>

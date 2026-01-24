@@ -1,36 +1,21 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Star, CheckCircle, Quote } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const Testimonials: React.FC = () => {
   const { t } = useLanguage();
   const reviews = (Array.isArray(t('testimonials.reviews')) ? t('testimonials.reviews') : []) as any[];
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.querySelectorAll('.reveal').forEach((el, i) => {
-            (el as HTMLElement).style.transitionDelay = `${i * 150}ms`;
-            el.classList.add('active');
-          });
-        }
-      });
-    }, { threshold: 0.1 });
-
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
-  }, []);
+  const sectionRef = useScrollReveal();
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-32 bg-white relative overflow-hidden">
+    <section ref={sectionRef} className="py-20 md:py-32 bg-white relative overflow-hidden reveal">
       {/* Background decoration - subtle */}
       <div className="absolute top-0 right-0 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-primary-50 rounded-full blur-[80px] md:blur-[100px] opacity-20 translate-x-1/2 -translate-y-1/2"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 text-center relative z-10">
-        <div className="reveal">
+        <div className="reveal reveal-child">
           <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 md:mb-6 tracking-tight">
             {t('testimonials.title')} <span className="text-primary-600">{t('testimonials.subtitle')}</span>
           </h2>
@@ -39,7 +24,7 @@ const Testimonials: React.FC = () => {
           </p>
         </div>
 
-        <div className="reveal flex flex-col items-center justify-center mb-16 md:mb-24 bg-zinc-50/80 backdrop-blur-sm px-6 py-4 md:px-10 md:py-8 rounded-2xl md:rounded-[3rem] border border-zinc-100 inline-block shadow-sm">
+        <div className="reveal reveal-child flex flex-col items-center justify-center mb-16 md:mb-24 bg-zinc-50/80 backdrop-blur-sm px-6 py-4 md:px-10 md:py-8 rounded-2xl md:rounded-[3rem] border border-zinc-100 inline-block shadow-sm" style={{ transitionDelay: '150ms' }}>
           <div className="flex space-x-1 md:space-x-2 mb-3 md:mb-4">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-5 h-5 md:w-7 md:h-7 fill-primary-500 text-primary-500" />
@@ -50,7 +35,11 @@ const Testimonials: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
           {reviews.map((review, idx) => (
-            <div key={idx} className="reveal bg-white p-8 md:p-12 rounded-2xl border border-zinc-100 flex flex-col items-start text-left hover:border-primary-200 transition-all duration-500 group relative">
+            <div
+              key={idx}
+              className="reveal reveal-child bg-white p-8 md:p-12 rounded-2xl border border-zinc-100 flex flex-col items-start text-left hover:border-primary-200 transition-all duration-500 group relative"
+              style={{ transitionDelay: `${(idx + 2) * 150}ms` }}
+            >
               <Quote className="absolute top-6 right-6 md:top-10 md:right-10 w-8 h-8 md:w-12 md:h-12 text-primary-50 group-hover:text-primary-100 transition-colors" />
 
               <div className="flex space-x-1 mb-6 md:mb-8">
@@ -77,7 +66,7 @@ const Testimonials: React.FC = () => {
           ))}
         </div>
 
-        <div className="reveal mt-12 md:mt-20 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-10 md:space-x-12 text-[9px] md:text-[11px] font-black uppercase tracking-[0.2em] md:tracking-[0.3em] text-gray-400">
+        <div className="reveal reveal-child mt-12 md:mt-20 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-10 md:space-x-12 text-[9px] md:text-[11px] font-black uppercase tracking-[0.2em] md:tracking-[0.3em] text-gray-400" style={{ transitionDelay: `${(reviews.length + 2) * 150}ms` }}>
           <div className="flex items-center text-green-600">
             <CheckCircle className="w-4 h-4 mr-2 md:mr-3" />
             {t('testimonials.googleText')}
