@@ -14,7 +14,7 @@ const BeforeAfter: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="reveal-child reveal mb-16">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
-            {t('beforeAfter.title')} – <span className="text-orange-600">{t('beforeAfter.subtitle')}</span>
+            {t('beforeAfter.title')} – <span className="text-primary-600">{t('beforeAfter.subtitle')}</span>
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto font-medium">
             {t('beforeAfter.description')}
@@ -34,7 +34,7 @@ const BeforeAfter: React.FC = () => {
         <div className="mt-20 reveal reveal-child delay-500">
           <a
             href="#contact"
-            className="inline-block bg-orange-600 text-white px-10 py-4 rounded-xl font-bold text-sm uppercase tracking-widest hover:bg-orange-700 transition-all shadow-xl shadow-orange-100"
+            className="inline-block bg-primary-600 text-white px-10 py-4 rounded-xl font-bold text-sm uppercase tracking-widest hover:bg-primary-700 transition-all shadow-xl shadow-primary-100"
           >
             {t('contact.form.submit')}
           </a>

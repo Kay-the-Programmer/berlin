@@ -45,7 +45,7 @@ const Services: React.FC = () => {
           {servicesList.map((service, idx) => (
             <div
               key={idx}
-              className={`reveal reveal-item flex flex-col xl:flex-row bg-zinc-50 border border-zinc-100 rounded-2xl overflow-hidden hover:border-orange-200 transition-all duration-500 delay-${idx * 100 + 100}`}
+              className={`reveal reveal-item flex flex-col xl:flex-row bg-zinc-50 border border-zinc-100 rounded-2xl overflow-hidden hover:border-primary-200 transition-all duration-500 delay-${idx * 100 + 100}`}
             >
               <div className="xl:w-1/2 h-52 sm:h-64 xl:h-auto overflow-hidden">
                 <img
@@ -58,7 +58,7 @@ const Services: React.FC = () => {
                 <div>
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3 md:mb-4 flex items-center justify-between group">
                     {service.title}
-                    <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5 text-zinc-300 group-hover:text-orange-600 transition-colors" />
+                    <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5 text-zinc-300 group-hover:text-primary-600 transition-colors" />
                   </h3>
                   <p className="text-xs md:text-sm text-zinc-500 mb-6 leading-relaxed">
                     {service.desc}
@@ -67,7 +67,7 @@ const Services: React.FC = () => {
                 <div className="space-y-2 pt-4 md:pt-6 border-t border-zinc-200">
                   {service.features.slice(0, 3).map((f: string, i: number) => (
                     <div key={i} className="text-[9px] md:text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center">
-                      <div className="w-1 md:w-1.5 h-1 md:h-1.5 bg-orange-600 rounded-full mr-2 md:mr-3"></div>
+                      <div className="w-1 md:w-1.5 h-1 md:h-1.5 bg-primary-600 rounded-full mr-2 md:mr-3"></div>
                       {f}
                     </div>
                   ))}

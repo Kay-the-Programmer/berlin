@@ -26,7 +26,7 @@ const AboutUs: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center mb-16 reveal-unit reveal">
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
-            <span className="text-orange-600">{t('about.title1')}</span> {t('about.title2')}
+            <span className="text-primary-600">{t('about.title1')}</span> {t('about.title2')}
           </h2>
         </div>
 
@@ -70,7 +70,7 @@ const AboutUs: React.FC = () => {
               {(Array.isArray(t('about.services')) ? t('about.services') : []).map((item: string, i: number) => (
                 <li key={i} className="flex items-center text-slate-700 text-sm font-semibold">
                   <div className="w-6 h-6 bg-zinc-50 border border-zinc-100 rounded-lg flex items-center justify-center mr-4">
-                    <span className="text-[10px] text-orange-600 font-bold">{i + 1}</span>
+                    <span className="text-[10px] text-primary-600 font-bold">{i + 1}</span>
                   </div>
                   {item}
                 </li>
@@ -78,7 +78,7 @@ const AboutUs: React.FC = () => {
             </ul>
             <div className="bg-zinc-50 p-6 rounded-xl border border-zinc-100 flex items-center shadow-sm">
               <div className="w-10 h-10 bg-white border border-zinc-100 rounded-lg flex items-center justify-center mr-4">
-                <Phone className="w-5 h-5 text-orange-600" />
+                <Phone className="w-5 h-5 text-primary-600" />
               </div>
               <a href="tel:+4917622006681" className="block hover:opacity-80 transition-opacity" title={t('about.hotlineLabel')}>
                 <div className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest mb-1">{t('about.hotlineLabel')}</div>
@@ -93,7 +93,7 @@ const AboutUs: React.FC = () => {
             {(Array.isArray(t('about.features')) ? t('about.features') : []).map((feature: string, i: number) => (
               <div key={i} className={`text-center flex flex-col items-center reveal-unit reveal delay-${i * 100 + 300}`}>
                 <div className="w-10 h-10 bg-white border border-zinc-100 rounded-lg flex items-center justify-center mb-6">
-                  <CheckCircle2 className="w-5 h-5 text-orange-600" />
+                  <CheckCircle2 className="w-5 h-5 text-primary-600" />
                 </div>
                 <span className="text-sm font-bold text-slate-700 uppercase tracking-wider">{feature}</span>
               </div>

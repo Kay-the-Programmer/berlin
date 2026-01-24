@@ -121,8 +121,8 @@ const ContactSection: React.FC = () => {
 
             <div className="space-y-8">
               <a href="tel:+4917622006681" className="flex items-center group">
-                <div className="w-12 h-12 bg-zinc-50 border border-zinc-100 rounded-xl flex items-center justify-center mr-5 group-hover:border-orange-200 transition-colors">
-                  <Phone className="w-5 h-5 text-slate-400 group-hover:text-orange-600" />
+                <div className="w-12 h-12 bg-zinc-50 border border-zinc-100 rounded-xl flex items-center justify-center mr-5 group-hover:border-primary-200 transition-colors">
+                  <Phone className="w-5 h-5 text-slate-400 group-hover:text-primary-600" />
                 </div>
                 <div>
                   <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest mb-1">{t('contact.direct_call')}</p>
@@ -162,7 +162,7 @@ const ContactSection: React.FC = () => {
               <div className="text-center py-10">
                 <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-6" />
                 <h3 className="text-2xl font-bold mb-4">{t('contact.form.success')}</h3>
-                <button onClick={() => setStatus('idle')} className="text-orange-600 font-bold hover:underline">
+                <button onClick={() => setStatus('idle')} className="text-primary-600 font-bold hover:underline">
                   {t('contact.form.another')}
                 </button>
               </div>
@@ -177,7 +177,7 @@ const ContactSection: React.FC = () => {
                       name="postalCode"
                       value={formData.postalCode}
                       onChange={handleChange}
-                      className={`w-full px-6 py-4 bg-white border ${errors.postalCode ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-orange-500 transition-colors font-medium`}
+                      className={`w-full px-6 py-4 bg-white border ${errors.postalCode ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-primary-500 transition-colors font-medium`}
                     />
                     {errors.postalCode && <div className="text-[10px] text-red-500 mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1" />{errors.postalCode}</div>}
                   </div>
@@ -190,7 +190,7 @@ const ContactSection: React.FC = () => {
                       name="date"
                       value={formData.date}
                       onChange={handleChange}
-                      className={`w-full px-6 py-4 bg-white border ${errors.date ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-orange-500 transition-colors font-medium`}
+                      className={`w-full px-6 py-4 bg-white border ${errors.date ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-primary-500 transition-colors font-medium`}
                     />
                     {errors.date && <div className="text-[10px] text-red-500 mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1" />{errors.date}</div>}
                   </div>
@@ -201,7 +201,7 @@ const ContactSection: React.FC = () => {
                       name="time"
                       value={formData.time}
                       onChange={handleChange}
-                      className={`w-full px-6 py-4 bg-white border ${errors.time ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-orange-500 transition-colors font-medium`}
+                      className={`w-full px-6 py-4 bg-white border ${errors.time ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-primary-500 transition-colors font-medium`}
                     />
                     {errors.time && <div className="text-[10px] text-red-500 mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1" />{errors.time}</div>}
                   </div>
@@ -213,7 +213,7 @@ const ContactSection: React.FC = () => {
                       name="cleaningType"
                       value={formData.cleaningType}
                       onChange={handleChange}
-                      className={`w-full px-6 py-4 bg-white border ${errors.cleaningType ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-orange-500 transition-colors font-medium appearance-none`}
+                      className={`w-full px-6 py-4 bg-white border ${errors.cleaningType ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-primary-500 transition-colors font-medium appearance-none`}
                     >
                       <option value="">-</option>
                       {servicesList.map((s, i) => (
@@ -232,7 +232,7 @@ const ContactSection: React.FC = () => {
                       min="1"
                       value={formData.cleaners}
                       onChange={handleChange}
-                      className={`w-full px-6 py-4 bg-white border ${errors.cleaners ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-orange-500 transition-colors font-medium`}
+                      className={`w-full px-6 py-4 bg-white border ${errors.cleaners ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-primary-500 transition-colors font-medium`}
                     />
                     {errors.cleaners && <div className="text-[10px] text-red-500 mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1" />{errors.cleaners}</div>}
                   </div>
@@ -244,7 +244,7 @@ const ContactSection: React.FC = () => {
                       min="1"
                       value={formData.hours}
                       onChange={handleChange}
-                      className={`w-full px-6 py-4 bg-white border ${errors.hours ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-orange-500 transition-colors font-medium`}
+                      className={`w-full px-6 py-4 bg-white border ${errors.hours ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-primary-500 transition-colors font-medium`}
                     />
                     {errors.hours && <div className="text-[10px] text-red-500 mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1" />{errors.hours}</div>}
                   </div>
@@ -268,7 +268,7 @@ const ContactSection: React.FC = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className={`w-full px-6 py-4 bg-white border ${errors.phone ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-orange-500 transition-colors font-medium`}
+                      className={`w-full px-6 py-4 bg-white border ${errors.phone ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-primary-500 transition-colors font-medium`}
                     />
                     {errors.phone && <div className="text-[10px] text-red-500 mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1" />{errors.phone}</div>}
                   </div>
@@ -279,7 +279,7 @@ const ContactSection: React.FC = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full px-6 py-4 bg-white border ${errors.email ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-orange-500 transition-colors font-medium`}
+                      className={`w-full px-6 py-4 bg-white border ${errors.email ? 'border-red-500' : 'border-zinc-200'} rounded-xl outline-none focus:border-primary-500 transition-colors font-medium`}
                     />
                     {errors.email && <div className="text-[10px] text-red-500 mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1" />{errors.email}</div>}
                   </div>
@@ -288,7 +288,7 @@ const ContactSection: React.FC = () => {
                 <button
                   type="submit"
                   disabled={status === 'sending'}
-                  className="w-full bg-slate-900 text-white py-5 rounded-xl font-bold text-sm uppercase tracking-widest hover:bg-orange-600 transition-all disabled:opacity-50 flex items-center justify-center space-x-2"
+                  className="w-full bg-slate-900 text-white py-5 rounded-xl font-bold text-sm uppercase tracking-widest hover:bg-primary-600 transition-all disabled:opacity-50 flex items-center justify-center space-x-2"
                 >
                   {status === 'sending' ? (
                     <>
