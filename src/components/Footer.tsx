@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
                 {['home', 'about', 'services', 'contact'].map((l) => (
                   <li key={l}>
                     <a href={`#${l}`} className="text-xs text-zinc-400 hover:text-white transition-colors flex items-center group">
-                      <ChevronRight className="w-3 h-3 mr-2 text-zinc-700 group-hover:text-orange-600" />
+                      <ChevronRight className="w-3 h-3 mr-2 text-zinc-700 group-hover:text-primary-600" />
                       {t(`nav.${l}`)}
                     </a>
                   </li>

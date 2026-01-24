@@ -22,7 +22,7 @@ const WhyChooseUs: React.FC = () => {
         <div className="mb-12 md:mb-20">
           <div className="text-left reveal-left reveal-child">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 md:mb-6 tracking-tight">
-              {t('whyChooseUs.title')} <span className="text-orange-600">{t('whyChooseUs.subtitle')}</span>.
+              {t('whyChooseUs.title')} <span className="text-primary-600">{t('whyChooseUs.subtitle')}</span>.
             </h2>
             <p className="text-zinc-500 text-base md:text-lg max-w-md leading-relaxed font-medium">
               {t('whyChooseUs.description')}
@@ -36,7 +36,7 @@ const WhyChooseUs: React.FC = () => {
               key={idx}
               className={`bg-white p-8 md:p-10 hover:bg-zinc-50 transition-all duration-300 group reveal reveal-stagger delay-${idx * 100}`}
             >
-              <div className="w-10 h-10 rounded-lg bg-zinc-100 flex items-center justify-center mb-6 md:mb-8 text-slate-500 group-hover:text-orange-600 transition-colors">
+              <div className="w-10 h-10 rounded-lg bg-zinc-100 flex items-center justify-center mb-6 md:mb-8 text-slate-500 group-hover:text-primary-600 transition-colors">
                 {icons[idx]}
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3 md:mb-4">{item.title}</h3>
