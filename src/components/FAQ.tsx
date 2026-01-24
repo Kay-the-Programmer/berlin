@@ -24,8 +24,9 @@ const FAQ: React.FC = () => {
           {items.map((faq, idx) => (
             <div
               key={idx}
-              className={`group border border-gray-100 rounded-2xl md:rounded-3xl overflow-hidden transition-all duration-300 reveal-child delay-${idx * 50 + 200} ${openIdx === idx ? 'ring-1 ring-primary-500 bg-white shadow-xl shadow-primary-100/20' : 'bg-white hover:border-primary-200'
+              className={`group border border-gray-100 rounded-2xl md:rounded-3xl overflow-hidden transition-all duration-300 reveal-child ${openIdx === idx ? 'ring-1 ring-primary-500 bg-white shadow-xl shadow-primary-100/20' : 'bg-white hover:border-primary-200'
                 }`}
+              style={{ transitionDelay: `${idx * 50 + 200}ms` }}
             >
               <button
                 id={`faq-btn-${idx}`}

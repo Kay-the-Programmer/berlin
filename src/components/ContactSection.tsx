@@ -1,7 +1,8 @@
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Phone, MessageCircle, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 import { sendContactForm } from '../services/emailService';
 
@@ -20,20 +21,9 @@ const ContactSection: React.FC = () => {
     email: ''
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useScrollReveal();
 
   const servicesList = t('services.list') as any[];
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('active');
-      });
-    }, { threshold: 0.1 });
-
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     const cleaners = parseFloat(formData.cleaners) || 0;

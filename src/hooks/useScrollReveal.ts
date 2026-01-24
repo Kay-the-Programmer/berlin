@@ -11,7 +11,7 @@ export const useScrollReveal = (threshold = 0.1) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('active');
             // Support for children with reveal classes
-            const children = entry.target.querySelectorAll('.reveal-child, .reveal-item, .reveal-unit, .reveal-stagger');
+            const children = entry.target.querySelectorAll('.reveal-child, .reveal-item, .reveal-unit, .reveal-stagger, .reveal-scale');
             children.forEach(child => child.classList.add('active'));
           }
         });

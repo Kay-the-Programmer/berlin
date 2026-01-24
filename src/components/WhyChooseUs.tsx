@@ -34,7 +34,8 @@ const WhyChooseUs: React.FC = () => {
           {items.map((item, idx) => (
             <div
               key={idx}
-              className={`bg-white p-8 md:p-10 hover:bg-zinc-50 transition-all duration-300 group reveal reveal-stagger delay-${idx * 100}`}
+              className="bg-white p-8 md:p-10 hover:bg-zinc-50 transition-all duration-300 group reveal reveal-stagger"
+              style={{ transitionDelay: `${idx * 100}ms` }}
             >
               <div className="w-10 h-10 rounded-lg bg-zinc-100 flex items-center justify-center mb-6 md:mb-8 text-slate-500 group-hover:text-primary-600 transition-colors">
                 {icons[idx]}

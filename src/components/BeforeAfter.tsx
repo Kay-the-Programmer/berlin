@@ -23,7 +23,7 @@ const BeforeAfter: React.FC = () => {
 
         <div className="space-y-32">
           {projects.map((project, idx) => (
-            <div key={idx} className={`reveal reveal-child delay-${(idx + 1) * 100}`}>
+            <div key={idx} className="reveal reveal-child" style={{ transitionDelay: `${(idx + 1) * 100}ms` }}>
               <BeforeAfterSlider
                 {...project}
               />
@@ -31,7 +31,7 @@ const BeforeAfter: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-20 reveal reveal-child delay-500">
+        <div className="mt-20 reveal reveal-child" style={{ transitionDelay: '500ms' }}>
           <a
             href="#contact"
             className="inline-block bg-primary-600 text-white px-10 py-4 rounded-xl font-bold text-sm uppercase tracking-widest hover:bg-primary-700 transition-all shadow-xl shadow-primary-100"

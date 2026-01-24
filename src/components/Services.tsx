@@ -45,7 +45,8 @@ const Services: React.FC = () => {
           {servicesList.map((service, idx) => (
             <div
               key={idx}
-              className={`reveal reveal-item flex flex-col xl:flex-row bg-zinc-50 border border-zinc-100 rounded-2xl overflow-hidden hover:border-primary-200 transition-all duration-500 delay-${idx * 100 + 100}`}
+              className="reveal reveal-item flex flex-col xl:flex-row bg-zinc-50 border border-zinc-100 rounded-2xl overflow-hidden hover:border-primary-200 transition-all duration-500"
+              style={{ transitionDelay: `${idx * 100 + 100}ms` }}
             >
               <div className="xl:w-1/2 h-52 sm:h-64 xl:h-auto overflow-hidden">
                 <img
